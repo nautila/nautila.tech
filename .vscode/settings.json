@@ -1,0 +1,8 @@
+{
+	"nuxtr.vueFiles.firstTag": "script",
+	"nuxtr.piniaFiles.defaultTemplate": "setup",
+	"nuxtr.defaultPackageManager": "pnpm",
+	"nuxtr.projectTemplates": [
+
+	]
+}
