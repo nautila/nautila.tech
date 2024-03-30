@@ -5,4 +5,7 @@ export default defineNuxtConfig({
 	app: {
 		rootId: "app",
 	},
+	content: {
+		documentDriven: true,
+	},
 });

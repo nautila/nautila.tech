@@ -1,8 +1,6 @@
-<script setup lang="ts"></script>
-
 <template>
 	<footer id="app-footer">
-		<d-container> Footer </d-container>
+		<d-container>Footer</d-container>
 	</footer>
 </template>
 

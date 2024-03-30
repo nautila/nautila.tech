@@ -9,7 +9,9 @@ useHead({
 	<app-header />
 
 	<app-main>
-		<NuxtPage />
+		<NuxtLayout>
+			<NuxtPage />
+		</NuxtLayout>
 	</app-main>
 
 	<app-footer />
