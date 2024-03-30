@@ -2,25 +2,19 @@
 
 <template>
 	<div>
-		<ULandingHero
+		<NLandingHero
 			title="Digitale Løsninger"
-			description="Med vår metode kan vi levere høykvalitets teknologi til lav pris"
-			:links="[
-				{
-					label: 'Kontakt',
-					size: 'xl',
-					variant: 'solid',
-					to: '/contact',
-				},
-				{
-					label: 'Les mer om våre tjenester',
-					size: 'lg',
-					variant: 'ghost',
-					to: '/services',
-				},
-			]" />
+			description="Med vår metode kan vi levere høykvalitets teknologi til lav pris">
+			<template #links>
+				<UButton to="/contact" size="xl" variant="solid">Contact</UButton>
+				<UButton to="/services" size="lg" variant="ghost">Read more about our services</UButton>
+			</template>
+		</NLandingHero>
 
-		<ULandingSection title="Tjenester">
+		<NLandingSection title="Services" description="The stuff we can do"></NLandingSection>
+		<NLandingSection title="Testimonials" description="What our clients say"></NLandingSection>
+
+		<!-- <ULandingSection title="Tjenester" icon="i-heroicons-bars-3-20-solid">
 			<ULandingGrid>
 				<ULandingCard
 					class="col-span-4"
@@ -35,9 +29,9 @@
 					title="Tilpasset prosjekt"
 					description="Vi leverer også teknologi på prosjektbasis, og kan leies inn på nye og eksisterende prosjekter." />
 			</ULandingGrid>
-		</ULandingSection>
+		</ULandingSection> -->
 
-		<ULandingSection title="Kundeopplevelser">
+		<!-- <ULandingSection title="Kundeopplevelser">
 			<ULandingGrid>
 				<ULandingTestimonial
 					class="col-span-4"
@@ -61,6 +55,6 @@
 						description: 'Daglig Leder i ‍Styretavla AS',
 					}" />
 			</ULandingGrid>
-		</ULandingSection>
+		</ULandingSection> -->
 	</div>
 </template>
